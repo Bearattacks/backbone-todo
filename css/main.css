@@ -18,10 +18,7 @@ textarea {
     color: #222;
 }
 
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
+
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -93,10 +90,175 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background-color:#dfdfd9 ;
+    font-family: 'Chivo', sans-serif;
+    color:#5e5e5e;
+
+}
+
+#todoapp {
+width: 562px;
+margin: 0 auto;
+padding: 150px;
+}
+
+
+
+.inner {
+    z-index: 15;
+}
+
+#new-todo {
+    opacity: 1;
+    border: none;
+    padding: 8px 0px 8px 10px;
+    font-family: 'Chivo', sans-serif;
+    font-size: 3.3em;
+    color:#5e5e5e;
+    outline:none;
+    border-bottom: 1px solid #dfdfd9;
+    background-color:#dfdfd9 ;
+    margin-bottom: 25px; 
+    margin-top: 25px;
+}
+
+#new-todo:focus {
+    color:#343436;
+    transition: .5s ease-in;  
+}
+
+::-webkit-input-placeholder {
+   color: #;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #;  
+}
+
+:-ms-input-placeholder {  
+   color: #;  
+}
+
+#filters {
+        padding:0; 
+
+}
+
+#filters li {
+    list-style-type: none;
+    margin: 0 10px 0 0;
+    padding:7px 12px 7px 12px;
+    display: inline;
+    background-color: #e9e8e6;
+    border-radius: 4px; 
+}
+
+#filters li a {
+    text-decoration: none;
+color: #a5a5a1;
+}
+
+#todoapp h1 {font-size: 2em; border-top: 5px solid; color: white;}
+
+h1 {
+    margin: 0;
+    padding: 0; 
+}
+
+#todo-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.view {
+    font-size: 1.3em;
+    width: 539px;
+    background-color: white;
+    margin-bottom: 7px;
+    box-shadow: 0px 1px 1px #afafaa;
+    padding: 12px 12px 10px 12px;
+    border-radius:3px;
+}
 
 
 
 
+.new-item {
+  max-height: 0;
+  opacity: 0;
+  transform: scale(0);
+  animation: growHeight 0.2s ease forwards;
+}
+@keyframes growHeight {
+  to { 
+    max-height: 50px;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+.edit {
+    background-color: white;
+    border:none;
+    font-size: 1em;
+    font-family:'helvetica neue';
+    width: 80%;
+    margin-top: 3px;
+    margin-left: 4px;
+    color:#383836;
+}
+
+
+.edit:focus {
+    outline: none;
+    background-color:#ffffb6 ;
+}
+.destroy {
+    float: right;
+    border: none;
+    font-size: .7em;
+    padding-top:8px;
+    padding-right: 5px; 
+    color:#a8a8a8;
+    cursor: pointer;
+
+
+}
+
+.toggle {
+    position: relative;
+    top:-3px;
+    left:0px;
+}
+
+#todo-count {
+
+    color: #a5a5a1;
+
+}
+
+#clear-completed {
+    border-radius: 3px;
+    background-color: #65c364;
+    padding: 10px;
+    border: none;
+    font-family: 'helvetica neue';
+    font-size: 1em;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+}
 
 
 
